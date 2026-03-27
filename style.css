@@ -1,0 +1,76 @@
+/* 重置基本樣式 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+    background-color: #f4f4f9; /* 柔和的背景色 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* 中間的白色卡片 */
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 90%; /* 確保在手機上也能好看 */
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* 裝幹話的對話框 */
+.quote-box {
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-left: 6px solid #ff6b6b; /* 左側紅色裝飾線 */
+    border-radius: 5px;
+}
+
+#bullshit-text {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #555;
+    transition: opacity 0.3s ease; /* 讓文字切換時有淡入淡出效果 */
+}
+
+/* 按鈕樣式 */
+button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ff5252;
+}
+
+/* 點擊時微縮的效果 */
+button:active {
+    transform: scale(0.95);
+}
